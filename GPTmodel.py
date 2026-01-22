@@ -1,4 +1,5 @@
-from Transformer import TransformerBlock, LayerNorm
+from transformer.transformerBlock import TransformerBlock
+from transformer.layerNormalization import LayerNorm
 import torch
 import torch.nn as nn
 import tiktoken

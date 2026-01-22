@@ -1,10 +1,10 @@
-# Implementation of Multi head attention mechanism with weight split
-
-# Importing required packages
+# Importing the necessary libraries...
 import torch
 import torch.nn as nn
 
-# Implementation
+
+# Implementation of Multi head attention mechanism with weight split
+
 class MultiHeadAttention(nn.Module):
     def __init__(self, d_in, d_out, context_length, dropout, num_head, qkv_bias = False):
         super().__init__()
@@ -55,19 +55,3 @@ class MultiHeadAttention(nn.Module):
         context_vector_multihead = self.out_proj(context_vector_multihead) # Optional projection
 
         return context_vector_multihead
-    
-torch.manual_seed(123)
-
-inputs = torch.tensor(
-    [
-    [0.43, 0.15, 0.89, 0.55, 0.87, 0.66],    
-    [0.57, 0.85, 0.64, 0.22, 0.58, 0.33],    
-    [0.77, 0.25, 0.10, 0.05, 0.80, 0.55]
-    ])
-batch = torch.stack((inputs, inputs), dim=0)
-batch_size, context_length, d_in = batch.shape
-d_out = 6
-multiheadAttentionComplete = MultiHeadAttention(d_in, d_out, context_length, 0.0, num_head=2)
-context_vector = multiheadAttentionComplete(batch)
-print("Context Vector for Multihead Attention \n", context_vector,"\n")
-print("Context Vector shape \n", context_vector.shape, "\n")
