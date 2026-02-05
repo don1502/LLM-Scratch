@@ -5,12 +5,13 @@ It is designed for learning and experimentation, not production use.
 
 ---
 
-## 🧠 What This Model Does
+##  What This Model Does
 
 - Uses **BPE tokenization**
-- Implements **Multi head-attention, feed-forward layers, and layer normalization**
+- Implements **Multi head self-attention, feed-forward layers, and layer normalization**
 - Trains a **GPT-like transformer** on raw text
 - Generates text autoregressively
+  
 
 ---
 
@@ -18,7 +19,7 @@ Each module is intentionally separated to keep the codebase **clean, modular, an
 
 ---
 
-## 🔤 Tokenization
+##  Tokenization
 
 The model uses a **character-level tokenizer**, which:
 
@@ -31,7 +32,7 @@ While inefficient for large-scale models, character tokenization is ideal for **
 
 ---
 
-## 🏗️ Model Architecture
+##  Model Architecture
 
 The model follows a **GPT-style Transformer architecture**:
 
@@ -54,7 +55,7 @@ The model is trained using **causal (autoregressive) language modeling**, where 
 
 ---
 
-## 🎯 Training Objective
+##  Training Objective
 
 The training task is **next-token prediction**:
 
@@ -68,7 +69,7 @@ The training task is **next-token prediction**:
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 All important parameters are defined in one place:
 
