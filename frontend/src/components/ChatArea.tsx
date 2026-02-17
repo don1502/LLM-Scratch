@@ -40,7 +40,7 @@ export default function ChatArea({ messages, onSendMessage, isLoading, isConnect
                 <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-arc-blue shadow-[0_0_6px_rgba(79,195,247,0.8)]" />
                     <span className="font-display text-sm font-medium text-iron-text tracking-wide">
-                        J.A.R.V.I.S.
+                        LLM
                     </span>
                     <span className="text-xs text-iron-text-muted px-2 py-0.5 rounded-md bg-iron-surface-light border border-iron-border">
                         GPT — From Scratch
@@ -50,8 +50,6 @@ export default function ChatArea({ messages, onSendMessage, isLoading, isConnect
                 {/* Right side actions */}
                 <div className="ml-auto flex items-center gap-1">
                     <div className="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-lg bg-iron-surface-light border border-iron-border">
-                        <div className={`w-1.5 h-1.5 rounded-full ${isConnected ? 'bg-green-400 shadow-[0_0_4px_rgba(74,222,128,0.6)]' : 'bg-red-400 shadow-[0_0_4px_rgba(248,113,113,0.6)]'}`} />
-                        <span className="text-xs text-iron-text-muted">{isConnected ? 'Online' : 'Offline'}</span>
                     </div>
                 </div>
             </header>

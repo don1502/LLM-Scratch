@@ -111,17 +111,6 @@ export default function Sidebar({
                         </div>
                     )}
                 </div>
-
-                {/* Footer / Branding */}
-                <div className="p-4 border-t border-iron-border">
-                    <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 rounded-full bg-arc-blue shadow-[0_0_6px_rgba(79,195,247,0.8)]" />
-                        <span className="font-display text-xs text-iron-text-muted tracking-wider uppercase">
-                            J.A.R.V.I.S.
-                        </span>
-                        <span className="text-[10px] text-iron-text-muted ml-auto">LLM v1.0</span>
-                    </div>
-                </div>
             </aside>
         </>
     );

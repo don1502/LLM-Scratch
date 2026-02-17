@@ -22,14 +22,13 @@ export default function WelcomeScreen() {
 
             {/* Title */}
             <h1 className="font-display text-3xl md:text-4xl font-bold text-iron-text mb-2 animate-glow tracking-wider">
-                J.A.R.V.I.S.
+                LLM
             </h1>
             <p className="text-iron-text-secondary text-base mb-2">
-                Just A Rather Very Intelligent System
+                Language Model
             </p>
             <p className="text-iron-text-muted text-sm mb-10 max-w-md text-center">
                 Your AI assistant powered by a language model built from scratch.
-                Ask me anything about machine learning, transformers, or general knowledge.
             </p>
 
             {/* Bottom decoration */}
