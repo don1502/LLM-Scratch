@@ -1,14 +1,13 @@
 # Importing necessary libraries...
-from MultiheadAttention import MultiHeadAttention
-from feedForward import FeedForward
-from layerNormalization import LayerNorm
+from transformer.MultiheadAttention import MultiHeadAttention
+from transformer.feedForward import FeedForward
+from transformer.layerNormalization import LayerNorm
 import torch.nn as nn
-from config.configuration import Config
+# from config.configuration import Config  # Not used directly here
 
 
 # Implementation of transformer block...
 
-cfg = Config()
 
 class TransformerBlock(nn.Module):
     def __init__(self, cfg):

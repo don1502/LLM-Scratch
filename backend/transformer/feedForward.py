@@ -1,6 +1,6 @@
 # Importing the necessary libraries...
 import torch.nn as nn
-from geluFunction import GELU
+from transformer.geluFunction import GELU
 
 # Implementation of Feedforward neural network
 

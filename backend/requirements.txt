@@ -1,0 +1,8 @@
+flask
+flask-cors
+torch
+tiktoken
+numpy
+tensorflow
+tqdm
+requests

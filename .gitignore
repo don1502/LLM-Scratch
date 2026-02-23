@@ -1,5 +1,13 @@
 bytePairToken.py
 wordtoken.py
 gpt_models/
-__pycache__/gpt_models/
+__pycache__/
 sms_spam_collection.zip
+
+env/
+**/__pycache__/
+
+# Generated data and models
+scraped_data/
+checkpoints/
+_write_files.py
